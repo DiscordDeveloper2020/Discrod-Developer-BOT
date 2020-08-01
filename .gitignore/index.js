@@ -14,17 +14,4 @@ client.on("message",(message) => {
 if(message.content === prefix + "help"){
     message.channel.send("**Le `d/help` n'est pas disponible pour le moment, il est encore en dévelopement !**")
 
-    if(message.content === prefix + "botinfo"){
-     var embed = new Discord.RichEmbed()
-     .setTitle("Infos BOT")
-     .setDescription("Ceci est une desvription")
-     .addField(".help","Page d'aide", true)
-     .addField("Embed01", "Embed 01 !", true)
-     ;setColor("0x23272A")
-     .setFooter("Ceci est un footer")
-     message.channel.sendEmbed(embed); 
-     
-}
-
-
 });
